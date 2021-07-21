@@ -4,9 +4,14 @@ To replace pre-defined sensitive information inside POST request body before sen
 
 To test:
 
-We will send POST request by using JSON file payload. Feel free to change the input.
+Start the demo
+```
+docker-compose -f docker-compose.yml up -d 
+```
+
+We will send POST request by using JSON file payload.
 ```
 curl -X POST --header "Content-Type: application/json" http://localhost:8000/post -d @testdata.json''
 ```
 
-You may tweak the rewrite.js file to play with the regex.
+You may play around with the rewrite.js file and testdata.json payload.
