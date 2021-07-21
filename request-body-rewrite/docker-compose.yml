@@ -1,0 +1,16 @@
+version: '3'
+services:
+  http-app:
+    image: kennethreitz/httpbin
+    environment:
+        - "GUNICORN_CMD_ARGS=\"--capture-output --error-logfile - --access-logfile - --access-logformat \"%(h)s %(t)s %(r)s %(s)s Host: %({Host}i)s}\"\""
+    ports:
+    - "8080:80"
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./frontend.conf:/etc/nginx/conf.d/frontend.conf
+      - ./rewrite.js:/etc/nginx/conf.d/rewrite.js
+    ports:
+        - "8000:8000"
