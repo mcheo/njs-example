@@ -14,4 +14,6 @@ We will send POST request by using JSON file payload.
 curl -X POST --header "Content-Type: application/json" http://localhost:8000/post -d @testdata.json''
 ```
 
+Upstream server httpbin will return the request body it received. If everything works as expected, the output of above curl command will show the "masked" request body received at httpbin server.
+
 You may play around with the rewrite.js file and testdata.json payload.
