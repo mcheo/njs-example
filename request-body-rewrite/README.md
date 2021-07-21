@@ -11,7 +11,7 @@ docker-compose -f docker-compose.yml up -d
 
 We will send POST request by using JSON file payload.
 ```
-curl -X POST --header "Content-Type: application/json" http://localhost:8000/post -d @testdata.json''
+curl -X POST --header "Content-Type: application/json" http://localhost:8000/post -d @testdata.json
 ```
 
 Upstream server httpbin will return the request body it received. If everything works as expected, the output of above curl command will show the "masked" request body received at httpbin server.
