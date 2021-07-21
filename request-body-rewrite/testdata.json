@@ -1,0 +1,11 @@
+{
+  "data": [{
+    "type": "articles",
+    "id": "1",
+    "attributes": {
+      "title": "JSON:API paints my bikeshed!",
+      "body1": "some people call xmas as Xmas, but all along i know it as Christmas",
+      "body2": "this is a cc 1123-3333-aaa3-11a3"
+    }
+  }]
+}
