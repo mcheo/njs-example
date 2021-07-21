@@ -1,5 +1,5 @@
 ## Objective
-To replace pre-defined sensitive information inside POST request body before sending to upstream server. We can use Regex to search for sensitive information.
+To replace pre-defined sensitive information inside POST request body before sending to upstream server. We can use Regex to search for sensitive information (defined in rewrite.js)
 
 
 To test:
